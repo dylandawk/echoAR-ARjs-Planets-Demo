@@ -6,7 +6,7 @@ const Iframe = require("react-iframe");
 /* the main page for the index route of this app */
 
 // Entry IDs for each planet model
-const planetID =
+const planetIDs =
 {
   mercury : "e0b9f7fa-50dd-4460-b569-6abee667b42e",
   venus : "493c9a5f-2883-4fe5-b50c-cf3971fe8422",
@@ -20,11 +20,10 @@ const planetID =
 
 // Landing Page
 const PlanetDemo = function() {
-  const [planet, setPlanet] = React.useState("earth");
 
   return (
     <div>
-      <PlanetForm planetID={planetID.mercury} />
+      <PlanetForm IDs={planetIDs} />
     </div>
   );
 }
