@@ -18,12 +18,23 @@ const planetIDs =
   neptune : "c1cff440-5e05-47b3-be2a-4b944b6bdd17"
 }
 
+const planetShortURL = {
+  mecury: "https://go.echoar.xyz/hGXh",
+  venus: "https://go.echoar.xyz/8pFh",
+  earth : "https://go.echoar.xyz/h8s3",
+  mars : "https://go.echoar.xyz/o8E6",
+  jupiter : "https://go.echoar.xyz/fnmF",
+  saturn : "https://go.echoar.xyz/Rhm9",
+  uranus : "https://go.echoar.xyz/9UKo",
+  neptune : "https://go.echoar.xyz/kn8b"
+}
+
 // Landing Page
 const PlanetDemo = function() {
 
   return (
     <div>
-      <PlanetForm IDs={planetIDs} />
+      <PlanetForm IDs={planetIDs} shortURL ={planetShortURL}/>
     </div>
   );
 }

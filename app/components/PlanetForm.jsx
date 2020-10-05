@@ -18,44 +18,66 @@ const PlanetForm = function(props) {
         // change iframe source if valid planet is entered
         if(id != "") iframe.src = url;
     }
+    
+    const changeIFormShortURL = (url) =>{
+        console.log(url);
+        // grab the iframe element from the html
+        let iframe = document.getElementById("iframe");
+        // change iframe source if valid planet is entered
+        if(url != "") iframe.src = url;
+    }
 
     // When submit button (or enter) is pressed
     const handleSubmit = (event) => {
         console.log(`The planet submitted is : ${planet}`);
         //console.log(findPlanetID(planet.toLowerCase()));
-        changeIFormURL(findPlanetID(planet.toLowerCase()));
+
+        // planet ID
+        //changeIFormURL(findPlanetInfo(planet.toLowerCase()));
+
+        // short URL
+        changeIFormShortURL(findPlanetInfo(planet.toLowerCase()))
         event.preventDefault();
     }
 
     
 
-    const findPlanetID = (planetName) => {
+    const findPlanetInfo = (planetName) => {
         let planetID = "";
+        let shortURL = "";
 
         // check submitted form for entered planet
         switch(planetName){
             case "mercury":
                 planetID = props.IDs.mercury;
+                shortURL = props.shortURL.mercury;
                 break;
             case "venus":
                 planetID = props.IDs.venus;
+                shortURL = props.shortURL.venus;
             case "earth":
                 planetID = props.IDs.earth;
+                shortURL = props.shortURL.earth;
                 break;
             case "mars":
                 planetID = props.IDs.mars;
+                shortURL = props.shortURL.mars;
                 break;
             case "jupiter":
                 planetID = props.IDs.jupiter;
+                shortURL = props.shortURL.jupiter;
                 break;
             case "saturn":
                 planetID = props.IDs.saturn;
+                shortURL = props.shortURL.saturn;
                 break;
             case "uranus":
                 planetID = props.IDs.uranus;
+                shortURL = props.shortURL.uranus;
                 break;
             case "neptune":
                 planetID = props.IDs.neptune;
+                shortURL = props.shortURL.neptune;
                 break;
             case "pluto":
                 console.log("I'm sorry, Pluto is no longer considered a planet");
@@ -66,7 +88,10 @@ const PlanetForm = function(props) {
         }
 
         // return the entry ID associated with planet model
-        return planetID;
+        //return planetID;
+
+        // return the short URL associated with planet model
+        return shortURL;
 
     }
 
