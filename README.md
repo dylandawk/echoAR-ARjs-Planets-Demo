@@ -18,7 +18,7 @@ Don't have an API key? Make sure to register for FREE at [echoAR](https://www.ec
 ### echoAR Console
 6. Add [Earth](https://poly.google.com/view/0nEWYSdUqRq) to your echoAR console
 7. Add the [other planets (except pluto)](https://poly.google.com/user/6NjDF67XHu0)
-8. Once added, copy the short URL generated for each model and use them to replace the ```<Your [planet] short url here>``` in [PlanetDemo.jsx](./app/PlanetDemo.jsx)
+8. Once added, copy the short URL generated for each model and use them to replace the ```<Your [planet] short url here>``` in [PlanetDemo.jsx](./app/components/PlanetDemo.jsx)
   * optional: add entry-IDs to replace ```<your [planet] entry id here>```
 
 ## Run
