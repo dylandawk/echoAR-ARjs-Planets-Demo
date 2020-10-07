@@ -1,4 +1,4 @@
-# Unity-ARFoundation-echoAR-Twitter-Demo
+# echoAR-ARjs-Planets-Demo
 ARjs Demo for echoAR.  Type a planet (from our solar system) into the input field to see it appear in AR
 
 ## Register
