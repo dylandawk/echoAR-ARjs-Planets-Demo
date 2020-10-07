@@ -23,7 +23,7 @@ Don't have an API key? Make sure to register for FREE at [echoAR](https://www.ec
 
 ## Run
 1. In terminal, enter ```npm start``` to serve the application on a local host. The terminal will display a port number that you can use in the next steps
-2. In a separate terminal window navigate to ```<path>/<to>/ngrok``` and enter ```http <port number>```. The terminal will list a number of urls - the important one is the url beginning with  ```https``
+2. In a separate terminal window navigate to ```<path>/<to>/ngrok``` and enter ```http <port number>```. The terminal will list a number of urls - the important one is the url beginning with  ```https```
 3. To view on computer or mobile device, open up web browser and enter the ngrok url.
 
 
