@@ -49,34 +49,34 @@ const PlanetForm = function(props) {
         // check submitted form for entered planet
         switch(planetName){
             case "mercury":
-                planetID = props.IDs.mercury;
+                planetID = props.entryID.mercury;
                 shortURL = props.shortURL.mercury;
                 break;
             case "venus":
-                planetID = props.IDs.venus;
+                planetID = props.entryID.venus;
                 shortURL = props.shortURL.venus;
             case "earth":
-                planetID = props.IDs.earth;
+                planetID = props.entryID.earth;
                 shortURL = props.shortURL.earth;
                 break;
             case "mars":
-                planetID = props.IDs.mars;
+                planetID = props.entryID.mars;
                 shortURL = props.shortURL.mars;
                 break;
             case "jupiter":
-                planetID = props.IDs.jupiter;
+                planetID = props.entryID.jupiter;
                 shortURL = props.shortURL.jupiter;
                 break;
             case "saturn":
-                planetID = props.IDs.saturn;
+                planetID = props.entryID.saturn;
                 shortURL = props.shortURL.saturn;
                 break;
             case "uranus":
-                planetID = props.IDs.uranus;
+                planetID = props.entryID.uranus;
                 shortURL = props.shortURL.uranus;
                 break;
             case "neptune":
-                planetID = props.IDs.neptune;
+                planetID = props.entryID.neptune;
                 shortURL = props.shortURL.neptune;
                 break;
             case "pluto":

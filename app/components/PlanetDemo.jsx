@@ -34,7 +34,7 @@ const PlanetDemo = function() {
 
   return (
     <div>
-      <PlanetForm IDs={planetIDs} shortURL ={planetShortURL}/>
+      <PlanetForm entryID={planetIDs} shortURL ={planetShortURL}/>
     </div>
   );
 }
