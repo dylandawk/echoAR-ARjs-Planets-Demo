@@ -7,11 +7,13 @@ const PlanetForm = function(props) {
 
     // update input field 
     const updatePlanet = (event) => {
-        setPlanet(event.target.value)
+        setPlanet(event.target.value);
     }
 
+    
     const changeIFormURL = (id) =>{
-        let url = "https://console.echoAR.xyz/arjs?key=small-resonance-2293&entry=" + id;
+        // change <YOUR-API-KEY> to echoAR API key
+        let url = "https://console.echoAR.xyz/arjs?key=<YOUR-API-KEY-HERE>&entry=" + id;
         console.log(url);
         // grab the iframe element from the html
         let iframe = document.getElementById("iframe");
@@ -32,10 +34,10 @@ const PlanetForm = function(props) {
         console.log(`The planet submitted is : ${planet}`);
         //console.log(findPlanetID(planet.toLowerCase()));
 
-        // planet ID
+        // switch url by planet ID. uncomment line 91 if using
         //changeIFormURL(findPlanetInfo(planet.toLowerCase()));
 
-        // short URL
+        // swith url by short URL
         changeIFormShortURL(findPlanetInfo(planet.toLowerCase()))
         event.preventDefault();
     }
